@@ -2,7 +2,7 @@ services:
   openclaw-gateway:
     image: ${OPENCLAW_IMAGE}
     build: .
-    restart: unless-stopped
+    restart: no
     environment:
       - HOME=/home/node
       - NODE_ENV=production
